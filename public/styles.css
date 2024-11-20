@@ -1,0 +1,339 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Modern font */
+  background: linear-gradient(to bottom, #000046, #1CB5E0); /* Dark blue to light blue gradient */
+  color: #ffffff; /* Light text color */
+  margin: 0;
+  padding: 20px; 
+}
+
+/* Header Styles */
+h1 {
+  color: #e1e1e1; /* Light header color */
+  font-size: 2.5em; /* Larger header font size */
+  text-align: center;
+  margin-bottom: 20px; /* Space below header */
+}
+
+/* Container Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for content containers */
+  border: 1px solid #555; /* Thin border */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+/* Button Styles */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #555, #333); /* Simple dark gray gradient for buttons */
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #333, #555); /* Inverted gradient on hover */
+  transform: scale(1.05);
+}
+
+/* Stat Container Styles */
+.stat-container {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+/* Stat Display Styling */
+.stat-display {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid #555;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 10px auto; /* Center the display */
+  padding: 20px;
+  max-width: 350px; /* Limit the width */
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #cccccc;
+  margin: 20px 0 10px; /* Space above and below */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Stat Items */
+.stat-display div {
+  margin: 10px 0; /* Increase space between items */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between; /* Flex for spacing */
+}
+
+.stat-display div span {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Flex Alignment */
+#playerStats,
+#carStats,
+#partsStats,
+#totalStats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .stat-display {
+    width: 90%;
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #222;
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Main Content Styles */
+#content {
+  display: none; /* Hide the content by default */
+  position: relative; /* Ensures any text over the image is positioned correctly */
+  z-index: 1; /* Keeps the content above the background image */
+}
+
+/* Shop Section Styles */
+.shop-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#shopSectionContent {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #555;
+  border-radius: 8px;
+}
+
+/* Item Styling */
+.item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px; /* Increased padding for better spacing */
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly darker background for items */
+}
+
+/* Item Details */
+.item-details {
+  color: #e0e0e0; /* Light gray for details */
+  font-size: 14px; /* Smaller font size for details */
+  margin-top: 5px;
+}
+
+/* Shopkeeper Dialogue */
+.shopkeeper-dialogue {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly opaque background */
+  color: #ffffff; /* White text */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-style: italic; /* Italicized for dialogue effect */
+}
+
+/* Additional Styles from JavaScript */
+.stat-container h2 {
+  color: #e0e0e0; /* Updated to match the color theme */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.stat-container p {
+  font-size: 16px;
+  color: #cccccc; /* Updated to match the color theme */
+}
+
+.car-image {
+  width: 100%; /* Adjust the width to fit your layout */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: add rounded corners */
+}
+
+.shop-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.car-item {
+  display: inline-block; /* Display cars inline */
+  margin: 10px; /* Space between cars */
+  text-align: center; /* Center the text */
+}
+
+.car-item img {
+  border: 2px solid #333; /* Optional border around images */
+  border-radius: 5px; /* Rounded corners for images */
+  transition: transform 0.2s; /* Smooth zoom effect */
+}
+
+.car-item img:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+body.overview-background {
+  background-image: url('images/background.jpg'); /* Ensure this is the correct path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clickable-area {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#chatContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  display: none; /* Chat hidden by default */
+}
+
+#chatMessages {
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+#chatInput {
+  width: 70%;
+  padding: 8px;
+}
+
+#sendMessage {
+  padding: 8px 15px;
+}
+
+#toggleChat {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/* Hide the word */
+.gold, .diamonds {
+  display: none;
+}
+
+/* Show the image */
+.gold-icon {
+  display: inline-block;
+  background-image: url('images/gold-icon.png');  /* Path to your gold image */
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px; /* Hide text */
+}
+
+.diamond-icon {
+  display: inline-block;
+  background-image: url('images/diamond-icon.png');  /* Path to your diamond image */
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px; /* Hide text */
+}
+
+
+/*se usar fontawesome
+/* Hide the word */
+.gold, .diamonds {
+  display: none;
+}
+
+/* Show the FontAwesome icon */
+.gold-icon {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f0e2";  /* Unicode for gold icon (check FontAwesome documentation for the right icon) */
+}
+
+.diamond-icon {
+  display: inline-block;
+  font-family: "FontAwesome";
+  content: "\f219";  /* Unicode for diamond icon */
+}
